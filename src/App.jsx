@@ -5,6 +5,9 @@ import Home_route from './routes/Home_route';
 import About_route from './routes/About_route';
 import Contact_route from './routes/Contact_route';
 import Members_route from './routes/Members_route';
+import Blogs_route from './routes/Blogs_route';
+import Events_route from './routes/Events_route';
+
 
 
 
@@ -17,6 +20,8 @@ const App = () => {
         <Route path='/About' element={<About_route />} />
         <Route path='/Members' element={<Members_route />} />
         <Route path='/Contact' element={<Contact_route />} />
+        <Route path='/Blogs' element={<Blogs_route />}/>
+        <Route path='/Events' element={<Events_route />}/>
      </Routes>
     </>
   );
