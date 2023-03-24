@@ -15,14 +15,14 @@ const Navbar = () => {
   return (
     <div className='flex justify-between items-center h-24 w-full mx-auto px-4 font-poppins'>
         <h1 className='w-half text-3xl font-bold text-black cursor-pointer hover:opacity-60 hover:text-orange-600'>
-           <Link to='/'>ECLUB</Link> 
+           <Link to='/'><img className="mt-20" src="./assets/navicon.jpg"></img></Link> 
         </h1>
         <ul className='{click ? "nav-menu active" : "nav-menu"} hidden md:flex text-black'>
             <Link to='/'><li className='p-4 cursor-pointer hover:opacity-80 hover:text-orange-500'>Home</li></Link>
             <Link to='/Blogs'><li className='p-4 cursor-pointer hover:opacity-80 hover:text-orange-500'>Blogs</li></Link>
             <Link to='/Events'><li className='p-4 cursor-pointer hover:opacity-80 hover:text-orange-500'>Events</li></Link>
             <Link to='/Members'><li className='p-4 cursor-pointer hover:opacity-80 hover:text-orange-500'>Members</li></Link>
-            <Link to='/Contact'><li className='p-4 cursor-pointer hover:opacity-80 hover:text-orange-500'>Contact</li></Link>
+
       </ul>
       <div onClick={handleNav} className='block md:hidden cursor-pointer'>
             {nav ? <AiOutlineClose size={20} className='text-black' />  : <AiOutlineMenu size={20} className=' text-black'/> }
