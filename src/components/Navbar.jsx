@@ -15,7 +15,7 @@ const Navbar = () => {
   return (
     <div className='flex justify-between items-center h-24 w-full mx-auto px-4 font-poppins'>
         <h1 className='w-half text-3xl font-bold text-black cursor-pointer hover:opacity-60 hover:text-orange-600'>
-           <Link to='/'><img className="mt-20" src="./assets/navicon.jpg"></img></Link> 
+           <Link to='/'><img className=" w-[115px] h-[100px] mb-px mt-5" src="./src/components/assets/navicon.jpeg"></img></Link> 
         </h1>
         <ul className='{click ? "nav-menu active" : "nav-menu"} hidden md:flex text-black'>
             <Link to='/'><li className='p-4 cursor-pointer hover:opacity-80 hover:text-orange-500'>Home</li></Link>
