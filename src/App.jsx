@@ -1,30 +1,22 @@
-import React from 'react'
-import {Routes,Route } from 'react-router-dom'
+import React from "react";
+import { Routes, Route } from "react-router-dom";
 
-import Home_route from './routes/Home_route';
-import About_route from './routes/About_route';
-import Contact_route from './routes/Contact_route';
-import Members_route from './routes/Members_route';
-import Blogs_route from './routes/Blogs_route';
-import Events_route from './routes/Events_route';
-
-
-
-
+import Home_route from "./routes/Home_route";
+import Market_route from "./routes/Market_route";
+import Portfolio_route from "./routes/Portfolio_route";
+import News_route from "./routes/News_route";
 
 const App = () => {
   return (
     <>
-     <Routes>
-        <Route path='/' element={<Home_route />} />
-        <Route path='/About' element={<About_route />} />
-        <Route path='/Members' element={<Members_route />} />
-        <Route path='/Contact' element={<Contact_route />} />
-        <Route path='/Blogs' element={<Blogs_route />}/>
-        <Route path='/Events' element={<Events_route />}/>
-     </Routes>
+      <Routes>
+        <Route path="/" element={<Home_route />} />
+        <Route path="/Portfolio" element={<Portfolio_route />} />
+        <Route path="/News" element={<News_route />} />
+        <Route path="/Market" element={<Market_route />} />
+      </Routes>
     </>
   );
-}
+};
 
-export default App
+export default App;
