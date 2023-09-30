@@ -24,11 +24,6 @@ const productSchema = new mongoose.Schema({
 const ESG = mongoose.model("esg_score", esgSchema);
 const Product = mongoose.model("Product", productSchema);
 
-app.use((req, res, next) => {
-  res.setHeader('Access-Control-Allow-Origin', 'https://greener-portfolios.netlify.app/');
-  next();
-});
-
 app.get("/", async (req, res) => {
   try {
     const foundProducts = await Product.find({}).exec();
