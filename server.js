@@ -6,7 +6,6 @@ const port1 = process.env.PORT1 || 4000;
 
 app.listen(port1, () => console.log("Server is running"));
 const mongoose = require("mongoose");
-const cors = require("cors");
 const conn = process.env.DATABASE_URL+"Product_database";
 mongoose.connect(conn, {
   useNewUrlParser: true,
