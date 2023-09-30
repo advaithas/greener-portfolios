@@ -6,6 +6,7 @@ const port1 = process.env.PORT1 || 4000;
 
 app.listen(port1, () => console.log("Server is running"));
 const mongoose = require("mongoose");
+const cors = require("cors");
 const conn = process.env.DATABASE_URL+"Product_database";
 mongoose.connect(conn, {
   useNewUrlParser: true,
@@ -23,6 +24,11 @@ const productSchema = new mongoose.Schema({
 const ESG = mongoose.model("esg_score", esgSchema);
 const Product = mongoose.model("Product", productSchema);
 
+app.use(
+  cors({
+    origin: "https://greener-portfolios.netlify.app/", 
+  })
+);
 app.get("/", async (req, res) => {
   try {
     const foundProducts = await Product.find({}).exec();

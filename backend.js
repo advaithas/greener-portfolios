@@ -1,4 +1,5 @@
 const MongoClient = require("mongodb").MongoClient;
+const cors = require("cors");
 const express = require("express");
 require("dotenv").config();
 
@@ -12,6 +13,12 @@ const collectionName = "esg_rating";
 
 // Middleware for parsing JSON requests
 app.use(express.json());
+
+app.use(
+  cors({
+    origin: "https://greener-portfolios.netlify.app/", 
+  })
+);
 
 // Endpoint to search for ESG Risk Score by company name
 app.get("/api", async (req, res) => {
