@@ -14,8 +14,6 @@ const collectionName = "esg_rating";
 // Middleware for parsing JSON requests
 app.use(express.json());
 
-app.use(cors({ origin: "http://127.0.0.1:5173" }));
-
 // Endpoint to search for ESG Risk Score by company name
 app.get("/api", async (req, res) => {
   try {
