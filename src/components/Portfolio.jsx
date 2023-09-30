@@ -14,7 +14,7 @@ const Portfolio = () => {
 
     // Replace with your backend server URL
     axios
-      .get(`http://localhost:3000/api?companyName=${companyName}`)
+      .get(`https://greener-portfolios.onrender.com/api?companyName=${companyName}`)
       .then((response) => {
         setESGRiskScore(response.data.esgRiskScore);
         setError(null);
