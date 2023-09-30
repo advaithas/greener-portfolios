@@ -26,7 +26,7 @@ const Product = mongoose.model("Product", productSchema);
 
 app.use(
   cors({
-    origin: "http://127.0.0.1:5173", // Replace with your frontend URL
+    origin: "https://greener-portfolios.netlify.app/", // Replace with your frontend URL
   })
 );
 app.get("/", async (req, res) => {
