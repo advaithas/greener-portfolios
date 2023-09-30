@@ -7,7 +7,7 @@ const CardsContainer = () => {
 
   useEffect(() => {
     axios
-      .get("https://greener-portfolios.onrender.com")
+      .get("https://greener-market.onrender.com")
       .then((response) => {
         setData(response.data);
         //console.log(response.data);
