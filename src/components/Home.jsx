@@ -1,13 +1,15 @@
 import React from "react";
+import SpaceVideo from "../components/assets/renewable.mp4";
 
 const Home = () => {
   return (
-    <div className="font-poppins">
-      <div className="grid grid-cols-2 pb-20 pt-20">
-        <div className="pt-10 pl-10 md:pt-16 md:pl-20 lg:pt-28 lg:pl-28">
-          {/* <h1 className='text-black text-2xl md:text-2xl lg:text-5xl p-4'>Welcome to,<br/>  <br/> PES University ECC</h1> */}
-        </div>
-        <div className=""></div>
+    <div className="hero pb-5">
+      <video autoPlay loop muted id="video">
+        <source src={SpaceVideo} type="video/mp4" />
+      </video>
+      <div className="content p-5">
+        <h1>SUSTAINABLE FUTURE</h1>
+        <p>INVEST IN A BETTER TOMORROW</p>
       </div>
     </div>
   );

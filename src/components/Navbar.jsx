@@ -13,9 +13,11 @@ const Navbar = () => {
   };
 
   return (
-    <div className="w-screen h-[80px] z-10 bg-zinc-200  drop-shadow-lg">
+    <div className="w-screen h-[80px]  bg-zinc-200  drop-shadow-lg">
       <div className="flex justify-between items-center h-24 w-full mx-auto px-4 font-poppins">
-        <h1 className="text-3xl font-bold mr-4 sm:text-4xl">BRAND.</h1>
+        <h1 className="text-3xl font-bold mr-4 sm:text-4xl hover:text-orange-500 cursor-pointer">
+          GREENER PORTFOLIOS.
+        </h1>
         <ul className='{click ? "nav-menu active" : "nav-menu"} hidden md:flex text-black'>
           <Link to="/">
             <li className="p-4 cursor-pointer hover:opacity-80 hover:text-orange-500">
